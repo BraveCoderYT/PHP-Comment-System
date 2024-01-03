@@ -3,7 +3,7 @@
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
-	$dbname = "comment_system_php";
+	$dbname = "blog_oop";
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
