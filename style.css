@@ -1,88 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ body {
+            background: #222222;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif;
+        }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+        .wrapper {
+            background: white;
+            border-radius: 10px;
+            width: 500px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
 
-body {
-	background: #222222;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	font-family: 'Roboto', sans-serif;
+        .wrapper .form input {
+            background: #222222;
+            color: white;
+            font-size: 15px;
+            width: 450px;
+            border-radius: 20px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .wrapper .form textarea {
+            background: #222222;
+            color: white;
+            font-size: 15px;
+            width: 450px;
+            border-radius: 20px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            resize: none;
+        }
+
+        .wrapper .form .btn {
+            background: #222222;
+            color: white;
+            font-size: 15px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px;
+            width: 200px;
+            border-radius: 20px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+            transition: 0.3s all ease;
+        }
+
+        .wrapper .form .btn:hover {
+            opacity: 1;
+        }
+
+       
+   
+
+        /* Your second styling code */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment h3 {
+            color: #333;
+        }
+
+        .comment p {
+            color: #555;
+        }
+
+        /* Comment Options Styling */
+        .comment-options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .comment-options button {
+            background: none;
+            color: #3498db;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 14px;
+            border: none;
+            padding: 0;
+        }
+
+        .comment-options button:hover {
+            color: #2980b9;
+        }
+
+        /* Edit Form Styling */
+   /* Edit Form Styling */
+.edit-form {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
 }
 
-.wrapper {
-	background: white;
-	border-radius: 10px;
-	width: 500px;
-	height: 300px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
+.edit-form input,
+.edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
-.wrapper .form input {
-	background: #222222;
-	color: white;
-	font-size: 15px;
-	width: 450px;
-	border-radius: 20px;
-	padding: 10px;
-	border: none;
-	outline: none;
-	margin-bottom: 10px;
-	margin-top: 20px;
+/* Style for the input field in the edit form */
+.edit-form input {
+    background-color: #f8f8f8; /* Add your desired background color */
+    color: #333; /* Add your desired text color */
 }
 
-.wrapper .form textarea {
-	background: #222222;
-	color: white;
-	font-size: 15px;
-	width: 450px;
-	border-radius: 20px;
-	padding: 10px;
-	border: none;
-	outline: none;
-	resize: none;
+/* Style for the textarea in the edit form */
+.edit-form textarea {
+    background-color: #f8f8f8; /* Add your desired background color */
+    color: #333; /* Add your desired text color */
+    resize: vertical; /* Allowing vertical resizing */
 }
 
-.wrapper .form .btn {
-	background: #222222;
-	color: white;
-	font-size: 15px;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 10px;
-	width: 200px;
-	border-radius: 20px;
-	margin: 0 auto;
-	display: block;
-	margin-top: 5px;
-	margin-bottom: 20px;
-	opacity: 0.8;
-	transition: 0.3s all ease;
+.edit-form button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-.wrapper .form .btn:hover {
-	opacity: 1;
+.edit-form button:hover {
+    background-color: #27ae60;
 }
 
-.content {
-	text-align: center;
-	background: royalblue;
-	color: white;
-	padding: 10px;
-	width: 500px;
-	border-radius: 10px;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-}
 
-.content p {
-	margin-bottom: 15px;
-	width: 450px;
-}
+        /* Delete Form Styling */
+        .delete-form {
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .delete-form button {
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .delete-form button:hover {
+            background-color: #c0392b;
+        }
